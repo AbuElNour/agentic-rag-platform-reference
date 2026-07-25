@@ -1,0 +1,2606 @@
+{
+  "schema_version": 1,
+  "mode": "deterministic-offline",
+  "cases": 20,
+  "trials": 60,
+  "passed": 60,
+  "success_rate": 1.0,
+  "safety_success_rate": 1.0,
+  "p50_latency_ms": 0.022,
+  "p95_latency_ms": 0.031,
+  "estimated_cost_usd": 0.0,
+  "results": [
+    {
+      "case_id": "read-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "rag-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "rag-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.081
+    },
+    {
+      "case_id": "read-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "rag-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "rag-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.039
+    },
+    {
+      "case_id": "read-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "rag-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "rag-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.031
+    },
+    {
+      "case_id": "read-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a",
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 3 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a",
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.03
+    },
+    {
+      "case_id": "read-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a",
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 3 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a",
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.028
+    },
+    {
+      "case_id": "read-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a",
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 3 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a",
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.027
+    },
+    {
+      "case_id": "read-03",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "policy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "policy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.026
+    },
+    {
+      "case_id": "read-03",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "policy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "policy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.077
+    },
+    {
+      "case_id": "read-03",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "policy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "policy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "read-04",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "read-04",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "read-04",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "read-05",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.027
+    },
+    {
+      "case_id": "read-05",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "read-05",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "privacy-a",
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 2 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "privacy-a",
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "isolation-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "isolation-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.022
+    },
+    {
+      "case_id": "isolation-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.022
+    },
+    {
+      "case_id": "isolation-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "isolation-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.022
+    },
+    {
+      "case_id": "isolation-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.022
+    },
+    {
+      "case_id": "approval-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.007
+    },
+    {
+      "case_id": "approval-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.006
+    },
+    {
+      "case_id": "approval-03",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-03",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-03",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-04",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-04",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-04",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-05",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-05",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "approval-05",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "grounding-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "grounding-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "grounding-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.022
+    },
+    {
+      "case_id": "grounding-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.007
+    },
+    {
+      "case_id": "grounding-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.006
+    },
+    {
+      "case_id": "grounding-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 0 tenant-scoped documents",
+          "metadata": {
+            "document_ids": []
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.008
+    },
+    {
+      "case_id": "routing-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.026
+    },
+    {
+      "case_id": "routing-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.024
+    },
+    {
+      "case_id": "routing-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "retry-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "retry-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.024
+    },
+    {
+      "case_id": "routing-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "routing-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "routing-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "routing-03",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "routing-03",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.015
+    },
+    {
+      "case_id": "routing-03",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "plan.create",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "plan.create",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "trace-01",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.024
+    },
+    {
+      "case_id": "trace-01",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "trace-01",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "trace-02",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "trace-02",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.023
+    },
+    {
+      "case_id": "trace-02",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "completed",
+      "tool": "knowledge.search",
+      "citations": [
+        "trace-a"
+      ],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "knowledge.search",
+          "metadata": {
+            "risk": "read"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "policy checks passed",
+          "metadata": {
+            "allowed": true,
+            "approval_required": false
+          }
+        },
+        {
+          "step": "retrieval.completed",
+          "detail": "retrieved 1 tenant-scoped documents",
+          "metadata": {
+            "document_ids": [
+              "trace-a"
+            ]
+          }
+        },
+        {
+          "step": "run.completed",
+          "detail": "result returned with explicit citations",
+          "metadata": {}
+        }
+      ],
+      "latency_ms": 0.025
+    },
+    {
+      "case_id": "trace-03",
+      "trial": 1,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.006
+    },
+    {
+      "case_id": "trace-03",
+      "trial": 2,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    },
+    {
+      "case_id": "trace-03",
+      "trial": 3,
+      "passed": true,
+      "failures": [],
+      "status": "approval_required",
+      "tool": "deployment.execute",
+      "citations": [],
+      "trace": [
+        {
+          "step": "request.received",
+          "detail": "accepted request",
+          "metadata": {
+            "tenant_id": "tenant-a"
+          }
+        },
+        {
+          "step": "router.selected",
+          "detail": "deployment.execute",
+          "metadata": {
+            "risk": "write"
+          }
+        },
+        {
+          "step": "trust.evaluated",
+          "detail": "human approval is required for state-changing tools",
+          "metadata": {
+            "allowed": false,
+            "approval_required": true
+          }
+        }
+      ],
+      "latency_ms": 0.005
+    }
+  ]
+}

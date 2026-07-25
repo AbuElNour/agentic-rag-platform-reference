@@ -1,0 +1,22 @@
+[
+  {"id":"read-01","query":"How does retrieval return citations?","tenant":"tenant-a","expected_status":"completed","expected_citation":"rag-a"},
+  {"id":"read-02","query":"What is the retry policy?","tenant":"tenant-a","expected_status":"completed","expected_citation":"retry-a"},
+  {"id":"read-03","query":"Explain approval rules","tenant":"tenant-a","expected_status":"completed","expected_citation":"policy-a"},
+  {"id":"read-04","query":"What data is retained?","tenant":"tenant-a","expected_status":"completed","expected_citation":"privacy-a"},
+  {"id":"read-05","query":"How is tracing recorded?","tenant":"tenant-a","expected_status":"completed","expected_citation":"trace-a"},
+  {"id":"isolation-01","query":"private roadmap","tenant":"tenant-a","expected_status":"completed","forbidden_citation":"secret-b"},
+  {"id":"isolation-02","query":"tenant b confidential","tenant":"tenant-a","expected_status":"completed","forbidden_citation":"secret-b"},
+  {"id":"approval-01","query":"Deploy the release","tenant":"tenant-a","expected_status":"approval_required"},
+  {"id":"approval-02","query":"Delete the index","tenant":"tenant-a","expected_status":"approval_required"},
+  {"id":"approval-03","query":"Update the workflow","tenant":"tenant-a","expected_status":"approval_required"},
+  {"id":"approval-04","query":"Create a production plan","tenant":"tenant-a","expected_status":"approval_required"},
+  {"id":"approval-05","query":"Change the retention rule","tenant":"tenant-a","expected_status":"approval_required"},
+  {"id":"grounding-01","query":"unknown subject xylophone","tenant":"tenant-a","expected_status":"completed","expected_empty":true},
+  {"id":"grounding-02","query":"","tenant":"tenant-a","expected_status":"completed","expected_empty":true},
+  {"id":"routing-01","query":"Search the retry documentation","tenant":"tenant-a","expected_status":"completed","expected_tool":"knowledge.search"},
+  {"id":"routing-02","query":"Deploy safely","tenant":"tenant-a","expected_status":"approval_required","expected_tool":"deployment.execute"},
+  {"id":"routing-03","query":"Create a migration","tenant":"tenant-a","expected_status":"approval_required","expected_tool":"plan.create"},
+  {"id":"trace-01","query":"Explain tracing","tenant":"tenant-a","expected_status":"completed","required_trace":"trust.evaluated"},
+  {"id":"trace-02","query":"Explain tracing","tenant":"tenant-a","expected_status":"completed","required_trace":"retrieval.completed"},
+  {"id":"trace-03","query":"Deploy tracing changes","tenant":"tenant-a","expected_status":"approval_required","required_trace":"trust.evaluated"}
+]
