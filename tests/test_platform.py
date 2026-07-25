@@ -30,6 +30,11 @@ class PlatformTests(unittest.TestCase):
         self.assertEqual(result.status, "approval_required")
         self.assertEqual(result.citations, [])
 
+    def test_punctuated_write_term_still_requires_approval(self) -> None:
+        result = self.platform.run("Please deploy, then report the result.", "tenant-a")
+        self.assertEqual(result.status, "approval_required")
+        self.assertEqual(result.tool, "deployment.execute")
+
     def test_approved_write_is_grounded(self) -> None:
         result = self.platform.run("Deploy according to the approval policy", "tenant-a", approved=True)
         self.assertEqual(result.status, "completed")
@@ -44,4 +49,3 @@ class PlatformTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

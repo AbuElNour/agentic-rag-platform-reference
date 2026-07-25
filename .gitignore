@@ -1,8 +1,3 @@
+.local/
 __pycache__/
 *.py[cod]
-.venv/
-.env
-.coverage
-dist/
-build/
-
