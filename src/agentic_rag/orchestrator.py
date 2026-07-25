@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from .memory import TenantMemory
-from .retrieval import TenantScopedRetriever
+from .retrieval import TenantScopedRetriever, tokenize
 from .trust import TrustPolicy
 from .types import Document, RunResult, ToolRequest, TraceEvent
 
@@ -18,7 +18,7 @@ class AgenticRAGPlatform:
         self.policy = TrustPolicy({"knowledge.search", "plan.create", "deployment.execute"})
 
     def _route(self, query: str) -> ToolRequest:
-        terms = set(query.lower().split())
+        terms = set(tokenize(query))
         if "deploy" in terms:
             return ToolRequest("deployment.execute", "write", {"query": query})
         if terms & WRITE_TERMS:
@@ -67,4 +67,3 @@ class AgenticRAGPlatform:
         self.memory.add(tenant_id, f"{request.name}:{','.join(citations) or 'none'}")
         trace.append(TraceEvent("run.completed", "result returned with explicit citations"))
         return RunResult("completed", answer, citations, trace, request.name)
-
